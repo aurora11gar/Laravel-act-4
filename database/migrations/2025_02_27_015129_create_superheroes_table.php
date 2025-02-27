@@ -12,8 +12,15 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('superheroes', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table-›id();
+            $table -›string("name" ,100);
+            $table ->string("real_name',40);
+            $table -›foreign_Id( 'Universe_id') -› constrained('universes');
+            $table -›foreign_Id( 'Gender_id') -> coknstrained ('genders');
+            $table -›string( 'Gender' ,10);
+            $table -›string('picture');
+            table-›timestamps();
+        
         });
     }
 
