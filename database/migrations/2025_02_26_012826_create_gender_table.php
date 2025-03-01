@@ -11,10 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('gender', function (Blueprint $table) {
-            $table->id();
+        Schema::create('genders', function (Blueprint $table) {
+            $table->id(); // Crea BIGINT UNSIGNED automáticamente
+            $table->string('name', 50);
             $table->timestamps();
-        });
+        });        
     }
 
     /**
