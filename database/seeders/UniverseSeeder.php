@@ -14,7 +14,6 @@ class UniverseSeeder extends Seeder
     {
         Universe::create([
             ['name' => 'Marvel', 'created_at' => Carbon::now(), 'updated_at' => Carbon::now()],
-            ['name' => 'DC', 'created_at' => Carbon::now(), 'updated_at' => Carbon::now()],
         ]);
         Universe::create([
             ['name' => 'DC', 'created_at' => Carbon::now(), 'updated_at' => Carbon::now()],
