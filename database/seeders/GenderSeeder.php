@@ -10,10 +10,14 @@ class GenderSeeder extends Seeder
     public function run ():void
     {
         gender::create([
-            'name'=>'female',
-            'name' => 'male',
-            'name' => 'other'
-
+            Gender::Create([
+            ['name' => 'Male', 'created_at' => now(), 'updated_at' => now()],
+        ]);
+        Gender::Create([
+            ['name' => 'Female', 'created_at' => now(), 'updated_at' => now()],
+        ]);
+        Gender::Create([
+            ['name' => 'Other', 'created_at' => now(), 'updated_at' => now()],
         ]);
     }
 }
