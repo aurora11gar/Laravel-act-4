@@ -17,5 +17,6 @@ class DatabaseSeeder extends Seeder
             GenderSeeder::class,
             GenderFactoryUniverse::class,
         ]);
+        superheroes::factory(100)->create();
     }
 }
