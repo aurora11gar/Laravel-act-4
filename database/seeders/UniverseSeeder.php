@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\Universe;
 
 class UniverseSeeder extends Seeder
 {
@@ -13,11 +14,13 @@ class UniverseSeeder extends Seeder
     public function run(): void
     {
         Universe::create([
-            ['name' => 'Marvel', 'created_at' => Carbon::now(), 'updated_at' => Carbon::now()],
-        ]);
-        Universe::create([
-            ['name' => 'DC', 'created_at' => Carbon::now(), 'updated_at' => Carbon::now()],
-        ]);
+            'name' => 'Marvel',
 
+        ]);
+        Universe::create([
+            'name' => 'DC',
+
+        ]);
+    
     }
 }
