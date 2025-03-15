@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Universe extends Model
 {
-    protected $table = "universes";
-
+   protected $filltable =[
+    'name'
+   ]; //
 }

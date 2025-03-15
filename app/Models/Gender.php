@@ -4,8 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class gender extends Model
+class Gender extends Model
 {
     protected $table = "genders";
-
 }
